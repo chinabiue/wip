@@ -11,7 +11,7 @@
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "Documentation"
+site_name = "Alex The Creator"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
@@ -22,21 +22,79 @@ site_description = "A new project generated from the default template project."
 # The site_author attribute. This is used in the HTML head element.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_author
-site_author = "<your name here>"
+site_author = "Alex"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
 # Read more: https://zensical.org/docs/setup/basics/#site_url
 #site_url = "https://www.example.com/"
 
+repo_url = "https://github.com/chinabiue/al666ex"
+repo_name = "CLAT"
+
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
-copyright = """
-Copyright &copy; 2025 The authors
-"""
+# copyright = """
+# Copyright &copy; 2025 The authors
+# """
 
+nav = [
+    { "Alex The Creator" = "index.md" },
+    { "Rhino" = [
+        "Rhino/index.md",
+        "Rhino/曲线参数空间.md",
+        "Rhino/Rhino经典理论知识整理.md",
+        "Rhino/Grasshooper入门与提高.md",
+        "Rhino/ATLV-Grasshopper-Python-学习笔记.md",
+        { "Rhino Python Primer 101 第8章" = [
+            "Rhino/Rhino Python Primer 101 第8章/Rhino-Python-Primer-101-第8章1节.md",
+            "Rhino/Rhino Python Primer 101 第8章/Rhino-Python-Primer-101-第8章2节.md",
+            "Rhino/Rhino Python Primer 101 第8章/Rhino-Python-Primer-101-第8章3节.md",
+            "Rhino/Rhino Python Primer 101 第8章/Rhino-Python-Primer-101-第8章4节.md",
+            "Rhino/Rhino Python Primer 101 第8章/Rhino-Python-Primer-101-第8章5节.md",
+            "Rhino/Rhino Python Primer 101 第8章/Rhino-Python-Primer-101-第8章6节.md",
+            "Rhino/Rhino Python Primer 101 第8章/Rhino-Python-Primer-101-第8章7节.md",
+            "Rhino/Rhino Python Primer 101 第8章/Rhino-Python-Primer-101-第8章8节.md",
+            "Rhino/Rhino Python Primer 101 第8章/Rhino-Python-Primer-101-第8章9节.md",
+            "Rhino/Rhino Python Primer 101 第8章/Rhino-Python-Primer-101-第9章9节.md",
+        ] },
+    ] },
+
+    { "Python" = [
+        "Python/index.md",
+        # "Python/Python基础.md",
+        # "Python/Python进阶.md",
+        # "Python/Python在Rhino中的应用.md",
+    ] },
+
+    { "Blog" = [
+        "Blog/index.md",
+        { "Posts" = [
+            "Blog/posts/Grasshopper从0开始.md",
+            "Blog/posts/git初使用.md",
+            "Blog/posts/calculus-with-python.md",
+            "Blog/posts/anaconda简单配置使用.md",
+            "Blog/posts/自动更新-Gitee-Pages.md",
+            "Blog/posts/栈的应用-python前缀表达式-中缀表达式-后缀表达式.md",
+            "Blog/posts/使用pathlib替换os-os-path-glob.md",
+            "Blog/posts/生成艺术Generative-art-with-samila.md",
+            "Blog/posts/Windows-10-使用VIM写python的基本设置.md",
+            "Blog/posts/VSCode-Rhino-联动写python程序的软件配置.md",
+            "Blog/posts/Samila项目说明.md",
+            "Blog/posts/python批量转换svg图片为png_cairosvg安装配置.md",
+            "Blog/posts/Python-f-string-snippets-实用用小片段.md",
+            "Blog/posts/notepad-配置python运行环境-代码自动格式化-运行-高亮.md",
+            "Blog/posts/mkdocs_syntax.md",
+            "Blog/posts/math.md",
+            "Blog/posts/hello-world.md",
+            "Blog/posts/zensical-customize.md",
+            # "posts/",
+        ] },
+    ] },
+    { "About" = "About/about.md" },
+]
 # Zensical supports both implicit navigation and explicitly defined navigation.
 # If you decide not to define a navigation here then Zensical will simply
 # derive the navigation structure from the directory structure of your
@@ -44,10 +102,6 @@ Copyright &copy; 2025 The authors
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -59,7 +113,8 @@ Copyright &copy; 2025 The authors
 #
 extra_css = [
     "/assets/styles/custom_stepslist.css",
-    "/assets/styles/custom_colors.css",
+    "/assets/styles/format.css",
+    "https://unpkg.com/katex@0/dist/katex.min.css",
 ]
 
 # With the `extra_javascript` option you can add your own JavaScript to your
@@ -68,7 +123,11 @@ extra_css = [
 # The path provided should be relative to the "docs_dir".
 #
 # Read more: https://zensical.org/docs/customization/#additional-javascript
-#extra_javascript = ["javascripts/extra.js"]
+extra_javascript = [
+    "assets/js/katex.js",
+    "https://unpkg.com/katex@0/dist/katex.min.js",
+    "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js",
+]
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
@@ -86,7 +145,7 @@ extra_css = [
 # Read more:
 # - https://zensical.org/docs/customization/#extending-the-theme
 #
-#custom_dir = "overrides"
+custom_dir = "overrides"
 
 # With the "favicon" option you can set your own image to use as the icon
 # browsers will use in the browser title bar or tab bar. The path provided
@@ -96,8 +155,8 @@ extra_css = [
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
-#favicon = "images/favicon.png"
-
+favicon = "assets/images/favicon.ico"
+logo = "assets/images/favicon.ico"
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
 # The "language" option allows you to set the language used. This language
@@ -217,12 +276,12 @@ features = [
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+    "navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
     # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
-    #"navigation.tabs.sticky",
+    "navigation.tabs.sticky",
 
     # A back-to-top button can be shown when the user, after scrolling down,
     # starts to scroll up again.
@@ -248,7 +307,7 @@ features = [
     # When navigation integration for the table of contents is enabled, it is
     # always rendered as part of the navigation sidebar on the left.
     # https://zensical.org/docs/setup/navigation/#navigation-integration
-    #"toc.integrate",
+    "toc.integrate",
 ]
 
 # ----------------------------------------------------------------------------
@@ -295,9 +354,9 @@ toggle.name = "Switch to light mode"
 # - https://zensical.org/docs/setup/logo-and-icons
 # - https://zensical.org/docs/authoring/icons-emojis/#search
 # ----------------------------------------------------------------------------
-#[project.theme.icon]
-#logo = "lucide/smile"
-#repo = "lucide/smile"
+[project.theme.icon]
+# logo = "lucide/star"
+repo = "fontawesome/brands/github"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
@@ -306,6 +365,9 @@ toggle.name = "Switch to light mode"
 #icon = "fontawesome/brands/github"
 #link = "https://github.com/user/repo"
 
+# [project.extra]
+# generator = false
+
 # Plugins
 # add 2026.01.09 21:08
 [project.markdown_extensions.stepslist]
@@ -313,4 +375,50 @@ toggle.name = "Switch to light mode"
 # admonition
 [project.markdown_extensions.admonition]
 [project.markdown_extensions.pymdownx.details]
+
+# code blocks
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.snippets]
+
+# Lists
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+
+# Tooltips
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.attr_list]
+
+# Icons, Emojis
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+# Formatting
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.tilde]
+
+# Footnotes
+[project.markdown_extensions.footnotes]
+
 [project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+    { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+
+# Content Tabs
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+
+# Grids
+[project.markdown_extensions.md_in_html]
+
+# math
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true

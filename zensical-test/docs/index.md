@@ -1,166 +1,116 @@
 ---
-icon: lucide/rocket
+title: Alex The Creator
+# template: home.html
+# date:
+#   created: 2023-04-29 19:09:07
+#   updated: 2024-07-01 20:19:21
+hide:
+  - navigation
+  - toc
+  - footer
+  - feedback
+
 ---
 
-# Get started
+<!-- There are lots of interesting things that I want to learn. -->
+## What did the Creator Create Here?
 
-For full documentation visit [zensical.org](https://zensical.org/docs/).
+<div class="grid cards wide" markdown>
 
-## Commands
+-   :material-format-paint:{ .lg .middle .yellow } __Craft This Site With Material for MKDocs__
+  
+    ---
 
-* [`zensical new`][new] - Create a new project
-* [`zensical serve`][serve] - Start local web server
-* [`zensical build`][build] - Build your site
+    Using documents and  templates I built this site.
 
-  [new]: https://zensical.org/docs/usage/new/
-  [serve]: https://zensical.org/docs/usage/preview/
-  [build]: https://zensical.org/docs/usage/build/
+    [:octicons-arrow-right-24: GO GO](#)
 
-## Examples
+-   :simple-python:{.lg .middle .green} __Playing With Python__
 
-### Admonitions
+    ---
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/)
+    Python is a programming language that lets you work quickly and integrate systems more effectively.
 
-!!! note
+    [:octicons-arrow-right-24: Go Python](Python/index.md)
 
-    This is a **note** admonition. Use it to provide helpful information.
+-   :simple-rhinoceros:{.lg .middle .red} __Rhinoceroes__
 
-!!! warning
+    ---
 
-    This is a **warning** admonition. Be careful!
+    Rhino is the most versatile of all 3D modelers, a jack-of-all-trades used in many industries…
 
-### Details
+    [:octicons-arrow-right-24: Go Rhino](Rhino/index.md)
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
+-   :simple-blogger:{.lg .middle .orange} __Blog Something Interesting__
 
-??? info "Click to expand for more info"
-    
-    This content is hidden until you click to expand it.
-    Great for FAQs or long explanations.
+    ---
 
-## Code Blocks
+    Write something down is very useful. Think more and you will not fall asleep at the middle of the night.
 
-> Go to [documentation](https://zensical.org/docs/authoring/code-blocks/)
+    [:octicons-arrow-right-24: Go Blog](blog/index.md)
 
-``` python hl_lines="2" title="Code blocks"
-def greet(name):
-    print(f"Hello, {name}!") # (1)!
+</div>
 
-greet("Python")
-```
-
-1.  > Go to [documentation](https://zensical.org/docs/authoring/code-blocks/#code-annotations)
-
-    Code annotations allow to attach notes to lines of code.
-
-Code can also be highlighted inline: `#!python print("Hello, Python!")`.
-
-## Content tabs
-
-> Go to [documentation](https://zensical.org/docs/authoring/content-tabs/)
-
-=== "Python"
-
-    ``` python
-    print("Hello from Python!")
-    ```
-
-=== "Rust"
-
-    ``` rs
-    println!("Hello from Rust!");
-    ```
-
-## Diagrams
-
-> Go to [documentation](https://zensical.org/docs/authoring/diagrams/)
-
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
-
-## Footnotes
-
-> Go to [documentation](https://zensical.org/docs/authoring/footnotes/)
-
-Here's a sentence with a footnote.[^1]
-
-Hover it, to see a tooltip.
-
-[^1]: This is the footnote.
+---
+# Who Deserve The Thanks?
 
 
-## Formatting
+<div class="accent" markdown>
 
-> Go to [documentation](https://zensical.org/docs/authoring/formatting/)
+### For those who create the beatiful programming language, we fellow the road they built before and thanks for giving us fun.
 
-- ==This was marked (highlight)==
-- ^^This was inserted (underline)^^
-- ~~This was deleted (strikethrough)~~
-- H~2~O
-- A^T^A
-- ++ctrl+alt+del++
+</div>
 
-## Icons, Emojis
+<div class="grid" markdown>
 
-> Go to [documentation](https://zensical.org/docs/authoring/icons-emojis/)
+<span class="quote">
+:material-format-quote-open:{.red}
+ The author of the [Python](https://www.python.org/) programming language. See also my resume and my publications list, a brief bio, assorted writings, presentations and interviews (all about Python), some pictures of me, my new blog, and my old blog on Artima.com. I am @gvanrossum on Twitter.
+:material-format-quote-close:{.red}
+</span>
+<br/><br/><br/>
+<img src="/assets/img/guido.jpg" class="headshot centered" />
+<br/>
+<a href="https://gvanrossum.github.io/" target="_blank" class="author centered">Guido van Rossum</a>
+{ .testimonial }
 
-* :sparkles: `:sparkles:`
-* :rocket: `:rocket:`
-* :tada: `:tada:`
-* :memo: `:memo:`
-* :eyes: `:eyes:`
+<span class="quote">
+:material-format-quote-open:{.red}
+Isaac Newton (born December 25, 1642 [January 4, 1643, New Style], Woolsthorpe, Lincolnshire, England—died March 20 [March 31], 1727, London) was an English physicist and mathematician who was the culminating figure of the Scientific Revolution of the 17th century. 
+:material-format-quote-close:{.red}
+</span>
+<br/><br/><br/>
+<img src="/assets/img/newton.webp" class="headshot centered" />
+<br/>
+<a href="https://www.britannica.com/biography/Isaac-Newton" target="_blank" class="author centered">Isaac Newton</a>
+{ .testimonial }
 
-## Maths
+<span class="quote">
+:material-format-quote-open:{.red}
+Graduated from University in 2008, I was a part time gate keeper and a member of football player of my class. Almost jobless at the end of 2024.  I am interesting in the fields of automations, internet technology, mechanics and power electronics.
+:material-format-quote-close:{.red}
+</span>
+<br/><br/><br/>
+<img src="/assets/img/pa.png" class="headshot centered" />
+<br/>
+<a href="https://al666ex.pages.dev/" target="_blank" class="author centered">Alex The creator</a>
+{ .testimonial }
 
-> Go to [documentation](https://zensical.org/docs/authoring/math/)
+</div>
 
-$$
-\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
-$$
+---
+# Sponsors & Backers
 
-!!! warning "Needs configuration"
-    Note that MathJax is included via a `script` tag on this page and is not
-    configured in the generated default configuration to avoid including it
-    in a pages that do not need it. See the documentation for details on how
-    to configure it on all your pages if they are more Maths-heavy than these
-    simple starter pages.
+###  ~~At the end of 2024, the economic of world is very bad, lots of people didn't get hired, Also I will lose my job at that time.I **appreciate** if you can feed me something!~~ At the mid of 2025, I start a new journey, hope this can last for 5 or 10 years then I can prepare for retiring.  :fontawesome-solid-money-check-dollar:{.lg .green .middle}
 
-<script id="MathJax-script" async src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [["\\(", "\\)"]],
-      displayMath: [["\\[", "\\]"]],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      ignoreHtmlClass: ".*|",
-      processHtmlClass: "arithmatex"
-    }
-  };
-</script>
+??? danger "Thanks"
 
-## Task Lists
+    === "Wechat" 
+        
+        ![Wechat](assets/img/wechat.png){width=220}
+        
+    === "Alipay" 
+        
+        ![Alipay](assets/img/alipay.png){width=220}
 
-> Go to [documentation](https://zensical.org/docs/authoring/lists/#using-task-lists)
-
-* [x] Install Zensical
-* [x] Configure `zensical.toml`
-* [x] Write amazing documentation
-* [ ] Deploy anywhere
-
-## Tooltips
-
-> Go to [documentation](https://zensical.org/docs/authoring/tooltips/)
-
-[Hover me][example]
-
-  [example]: https://example.com "I'm a tooltip!"
+---
